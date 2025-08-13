@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin-top: 32px;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #22223b;
+  letter-spacing: 1px;
+}
+
+form[method="GET"] button,
+form[method="POST"] button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  padding: 9px 22px;
+  border-radius: 7px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+}
+
+form[method="GET"] button:hover,
+form[method="POST"] button:hover {
+  background: #2563eb;
+  box-shadow: 0 4px 16px rgba(79,140,255,0.15);
+}
+
+.chat {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(79,140,255,0.07);
+  margin: 32px auto;
+  padding: 28px 36px 18px 36px;
+  max-width: 430px;
+  min-width: 320px;
+  position: relative;
+  border-left: 6px solid #4f8cff;
+  transition: box-shadow 0.2s;
+}
+
+.chat:hover {
+  box-shadow: 0 8px 32px rgba(79,140,255,0.18);
+}
+
+.msg {
+  background: #4f8cff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin: 14px 0;
+  font-size: 1.13rem;
+  word-break: break-word;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+em {
+  color: #6c757d;
+  font-size: 0.98em;
+}
+
+input, textarea {
+  width: 97%;
+  padding: 10px;
+  margin: 10px 0 18px 0;
+  border: 1px solid #bfc9d1;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  background: #f7faff;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4f8cff;
+  box-shadow: 0 0 0 2px #cce3ff;
+}
+
+@media (max-width: 600px) {
+  .chat {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 16px 4vw 12px 4vw;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+}
